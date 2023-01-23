@@ -599,7 +599,7 @@ const classOptionsData = [
     abilities: [
       'Awareness',
       'Divine Magic',
-      'Foragin and Hunting',
+      'Foraging and Hunting',
       'Limited Possessions',
       'Pursuit',
       'Surprise Attack',
@@ -638,6 +638,34 @@ const classOptionsData = [
     link: 'https://oldschoolessentials.necroticgnome.com/srd/',
     arcane: false,
     divine: false
+  },
+  {
+    name: 'Acolyte',
+    category: 'carcass',
+    requirements: null,
+    primeReqs: ['wisdom'],
+    hd: 6,
+    maxLevel: 14,
+    armour: 'any leather, chainmail, plate, shields',
+    weapons: 'only blunt weapons',
+    languages:
+      'Alignment, Common',
+    description:
+      'Acolytes are adventurers who have sworn to serve a deity. They are trained for battle and can channel the power of their deity.',
+    savingThrows: [11, 12, 14, 16, 15],
+    nextLevel: 1500,
+    abilities: [
+      'Bless',
+      'Detect Magic',
+      'Divine Magic',
+      'Know Alignment',
+      'Purify',
+      'Rally',
+      'Turning the Undead',
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: false,
+    divine: true
   }
 ]
 
