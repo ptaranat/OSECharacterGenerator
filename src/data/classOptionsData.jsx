@@ -7,7 +7,7 @@ const classOptionsData = [
     multiplePrimeReqs: false,
     hd: 8,
     maxLevel: 14,
-    armour: 'Any leather, chainmail, plate, shields',
+    armour: 'any leather, chainmail, plate, shields',
     weapons: 'any',
     languages: 'Alignment, Common',
     description:
