@@ -24,8 +24,8 @@ export default function ClassDescription(props) {
     Languages: characterClass.languages,
     'XP to level 2': characterClass.nextLevel,
     'Maximum Level': characterClass.maxLevel,
-    'Saving Throws': `Death ${characterClass.savingThrows[0]}, 
-    Wands ${characterClass.savingThrows[1]}, Paralysis ${characterClass.savingThrows[2]}, 
+    'Saving Throws': `Death ${characterClass.savingThrows[0]},
+    Wands ${characterClass.savingThrows[1]}, Paralysis ${characterClass.savingThrows[2]},
     Breath Attacks ${characterClass.savingThrows[3]}, Spells ${characterClass.savingThrows[4]}`
   }
 
