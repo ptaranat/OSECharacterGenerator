@@ -661,11 +661,204 @@ const classOptionsData = [
       'Know Alignment',
       'Purify',
       'Rally',
-      'Turning the Undead',
+      'Turn Undead'
     ],
     link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
     arcane: false,
     divine: true
+  },
+  {
+    name: 'Hephaestan',
+    category: 'carcass',
+    requirements: 'Minimum 9 charisma, minimum 9 constitution',
+    primeReqs: ['intelligence','wisdom'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 13) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 6,
+    maxLevel: 10,
+    armour: 'leather, chainmail, shields',
+    weapons: 'any',
+    languages:
+      'Alignment, Common, Hephaestan',
+    description:
+      'Hephaestans are a race of tall (6’), thin demihumans with angular features and pointed ears. Some sages claim they are relatives of elves, hailing from a distant land or even another world. For their part, hephaestans are tight lipped on the subject of their origins. Coldly rational and seemingly without emotion, the hephaestans are highly skilled in the use of mental powers, which they employ instead of magic. Despite their aloofness, hephaestans get along well with most intelligent races.',
+    savingThrows: [12, 13, 13, 15, 15],
+    nextLevel: 3000,
+    abilities: [
+      'Listening at Doors',
+      'Mental Powers (ESP, gestalt, healing trance, mind control, mind shield, telepathy)',
+      'Neuropressure'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: false,
+    divine: false
+  },
+  {
+    name: 'Kineticist',
+    category: 'carcass',
+    requirements: null,
+    primeReqs: ['dexterity','wisdom'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 16) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 6,
+    maxLevel: 14,
+    armour: 'none',
+    weapons: 'any',
+    languages:
+      'Alignment, Common',
+    description:
+      'Kineticists are masters of mind over matter, their rigorous physical and mental training focusing on the manipulation of internal kinetic force. This force can be harnessed to accelerate motion and hone reactions or can be projected outward to affect distant objects.\nThe ability to manipulate kinetic force may be awakened spontaneously or may be learned from a master. Either way, it is often the case that this power runs in families.',
+    savingThrows: [13, 14, 13, 16, 15],
+    nextLevel: 2000,
+    abilities: [
+      'Mental Defense',
+      'Mental Powers (accelerated motion, control density, crush life, kinetic fist, kinetic leap, kinetic shield, kinetic wave, telekinetic attack, throw weapon)',
+      'Neuropressure'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: false,
+    divine: false
+  },
+  {
+    name: 'Mage',
+    category: 'carcass',
+    requirements: null,
+    primeReqs: ['intelligence','wisdom'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 13) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 6,
+    maxLevel: 14,
+    armour: 'none',
+    weapons: 'dagger, short sword, staff, sword',
+    languages:
+      'Alignment, Common',
+    description:
+      'Mages are adventurers who study the secrets of deep magic, making them powerful allies.',
+    savingThrows: [12, 13, 12, 15, 14],
+    nextLevel: 2800,
+    abilities: [
+      'Arcane Magic',
+      'Detect Magic',
+      'Healing',
+      'Mage Armour',
+      'Mage’s Staff',
+      'Open/Close',
+      'Rally/Fear',
+      'Read Magic',
+      'Scribing Scrolls',
+      'Suggestion'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: true,
+    divine: false
+  },
+  {
+    name: 'Phase Elf',
+    category: 'carcass',
+    requirements: 'Minimum 9 intelligence',
+    primeReqs: ['intelligence','strength'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 13) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 6,
+    maxLevel: 10,
+    armour: 'any leather, chainmail, plate, shields / none',
+    weapons: 'any / dagger',
+    languages:
+      'Alignment, Common, Elvish, Doppelgänger, Dragon, Pixie',
+    description:
+      'Phase elves are slender, fey demihumans with pointed ears. They typically weigh about 120 pounds and are between 5½ and 6 feet tall. Their hair tends to be violet or silver and their eyes are either pure black or pure white—without an iris or pupil (see Dual Persona). Phase elves originate from an alternate dimension which is inaccessible to other races, and about which they never speak.',
+    savingThrows: [12, 13, 13, 15, 15],
+    nextLevel: 2800,
+    abilities: [
+      'Arcane Magic',
+      'Detect Secret Doors',
+      'Dual Persona',
+      'Immunity to Ghoul Paralysis',
+      'Infravision',
+      'Listening at Doors'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-2',
+    arcane: true,
+    arcaneSpells: true,
+    divine: false
+  },
+  {
+    name: 'Wood Elf',
+    category: 'carcass',
+    requirements: 'Minimum 9 dexterity, minimum 9 intelligence',
+    primeReqs: ['dexterity','wisdom'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 13) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 6,
+    maxLevel: 10,
+    armour: 'leather, shields',
+    weapons: 'any',
+    languages:
+      'Alignment, Common, Elvish, Bugbear, Dryad, Gnoll',
+    description:
+      'Wood elves are slender, fey demihumans with pointed ears. They typically weigh about 110 pounds and are between 5 and 5½ feet tall. Wood elves dwell in hidden, treetop settlements in deep forests, and are seldom seen by humans. They are reclusive and defend their homelands against trespassers. Like druids, wood elves worship the force of nature and the myriad deities that personify it.',
+    savingThrows: [12, 13, 13, 15, 15],
+    nextLevel: 3000,
+    abilities: [
+      'Awareness',
+      'Detect Secret Doors',
+      'Divine Magic',
+      'Foraging and Hunting',
+      'Hiding',
+      'Immunity to Ghoul Paralysis',
+      'Infravision',
+      'Listening at Doors',
+      'Missile Attack Bonus'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-2',
+    arcane: false,
+    divine: true,
+    druidSpells: true,
   }
 ]
 
