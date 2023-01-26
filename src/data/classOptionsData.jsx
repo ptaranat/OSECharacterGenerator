@@ -668,6 +668,77 @@ const classOptionsData = [
     divine: true
   },
   {
+    name: 'Gargantua',
+    category: 'carcass',
+    requirements: 'Minimum 9 constitution, minimum 9 strength',
+    primeReqs: ['constitution','strength'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 13 && abilityScore2 >= 16) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 && abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 10,
+    maxLevel: 10,
+    armour: 'any leather, chainmail, plate, shields',
+    weapons: 'any, can wield two-handed melee weapon with one hand',
+    languages:
+      'Alignment, Common',
+    description:
+      'Known as the “Big Siblings of Human-kind,” gargantuas are demihumans who stand about 7½’ tall and weigh 550 pounds. Gargantuas typically live among or near humans, though some prefer to establish their own communities in the wilderness. They are known as powerful warriors with a strong resistance to every kind of hardship. Gargantuas also have a reputation for being slow-witted and literal-minded that is not entirely deserved, though it is true that they lack subtlety when compared to their smaller kin. They can be steadfast allies or unyielding foes.',
+    savingThrows: [8, 9, 10, 13, 12],
+    nextLevel: 2500,
+    abilities: [
+      'Open Doors',
+      'Rock Throwing'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: false,
+    divine: false
+  },
+  {
+    name: 'Goblin',
+    category: 'carcass',
+    requirements: 'Minimum 9 dexterity',
+    primeReqs: ['dexterity','strength'],
+    checkPrimeReqRequirements: function(abilityScore1, abilityScore2) {
+      if (abilityScore1 >= 16 && abilityScore2 >= 16) {
+        return 10
+      }
+
+      if (abilityScore1 >= 13 || abilityScore2 >= 13) {
+        return 5
+      }
+
+      return 0
+    },
+    hd: 10,
+    maxLevel: 10,
+    armour: 'any leather, chainmail, plate, shields',
+    weapons: 'any appropriate to size',
+    languages:
+      'Alignment, Common, Goblin, the language of wolves',
+    description:
+      'Goblins are short demihumans standing between 3’ and 3½’ tall. They possess skin ranging in colour from yellow to orange to red (and everything in between), while their eyes are usually reddish in hue and are visible even in the dark. Though many goblins live underground, not all do so, especially those most likely to interact with humans and join adventuring parties. Goblins can be somewhat surly and resentful when interacting with other beings, or even their own kin, like bugbears and hobgoblins. These attitudes are only heightened by the fact that many goblins—though not all—are aligned with Chaos.',
+    savingThrows: [8, 9, 10, 13, 12],
+    nextLevel: 2000,
+    abilities: [
+      'Defensive Bonus',
+      'Detect Construction Tricks',
+      'Infravision',
+      'Stealth',
+      'Wolf Affinity'
+    ],
+    link: 'https://necroticgnome.com/products/carcass-crawler-issue-1',
+    arcane: false,
+    divine: false
+  },
+  {
     name: 'Hephaestan',
     category: 'carcass',
     requirements: 'Minimum 9 charisma, minimum 9 constitution',
